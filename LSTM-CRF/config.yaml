@@ -1,0 +1,23 @@
+train: 'dataset/eng.train'
+dev: 'dataset/eng.testa'
+test: 'dataset/eng.testb'
+pre_emb:  "dataset/embeddings/glove.6B.300d.txt"
+#eval_script: 'conlleval'
+models_path : "result/"
+char_lstm_dim: 200  #300
+char_dim: 200  #300
+lower: 1
+zeros: 0
+char_bidirect: 1
+word_dim: 300
+word_lstm_dim: 200    #300
+word_bidirect: 1
+all_emb: 1
+cap_dim: 0
+crf: 1
+dropout: 0.5
+learning_rate : 0.015  #0.01
+batch_size: 200
+epoch: 10
+printloss_after: 10
+#eval_after: 100

@@ -1,0 +1,27 @@
+LLM/
+study/
+ESIM-master/
+ESIM_master/
+BERT/
+bert-base-chinese/
+Images/
+LSTM-CRF/dataset/
+LSTM-CRF/result/
+Pytorch_tutorial/data/
+sentiment_analysis/aclImdb/
+*/bert-base-cased
+sQuAD1.1 with BERT/checkpoints/
+sQuAD1.1 with BERT/data/
+sQuAD1.1 with BERT/debug_squad/
+sQuAD1.1 with BERT/pytorch_pretrained_bert/
+*/__pycache__/
+*/.idea/
+*/.ipynb_checkpoints/
+*/.DS_Store
+*/.vscode/
+*/.vs/
+*/.vscode-server/
+*/.vscode
+
+
+

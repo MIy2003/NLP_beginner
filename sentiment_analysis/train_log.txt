@@ -1,0 +1,94 @@
+(base) root@container-6a4811bc52-68283732:~# conda activate Pytorch-gpu
+(Pytorch-gpu) root@container-6a4811bc52-68283732:~# cd ./autodl-tmp/bert
+(Pytorch-gpu) root@container-6a4811bc52-68283732:~/autodl-tmp/bert# python sentiment_analysis.py
+['this', 'is', 'a', 'simple', 'example', 'of', 'a', 'token', '##ized', 'sentence', '.']
+[1142, 1110, 170, 3014, 1859, 1104, 170, 22559, 2200, 5650, 119]
+PyTorch version:  1.12.1+cu113
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertModel: ['cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+训练集数目: 25000
+标签： 1 review: Zentropa has much in common with The Third Man, another noir
+标签： 1 review: Zentropa is the most original movie I've seen in years. If y
+标签： 1 review: Lars Von Trier is never backward in trying out new technique
+Token indices sequence length is longer than the specified maximum sequence length for this model (528 > 512). Running this sequence through the model will result in indexing errors
+torch.Size([25000, 256])
+tensor([  101,   195,  3452, 12736,  1161,  1144,  1277,  1107,  1887,  1114,
+         1103,  1503,  1299,   117,  1330, 25766,   118,  1176,  1273,  1383,
+         1621,  1103, 19468,  1104, 24217, 27772,  3186,   119,  1176,   189,
+         1204,  1306,   117,  1175,  1110,  1277,  1107, 14850,  2109,  4504,
+         1250,   119,  1175,  1110,  1126,  7386,  1821, 26237,  1389,  1150,
+         3370, 15962,  2017,  1114,   170,  1590,  1119,  2144,   112,   189,
+         1541,  2437,   117,  1105,  2133, 22607,  2340,  1110,  1155,  1103,
+         1167,  8261,  1107,  5014,  1114,  1103, 14252,   119,   133,  9304,
+          120,   135,   133,  9304,   120,   135,  1133,   178,   112,   173,
+         1138,  1106,  1474,  1115,  1103,  1503,  1299,  1144,   170,  1167,
+         1218,   118, 21165,  9844,   119,   195,  3452, 12736,  1161,  1110,
+          170,  2113,  4267,  1116, 25665,  1906,  1107,  1142,  4161,   119,
+         3229,  1142,  1110, 24629,   131,  1122,  1110,  2756,  1112,   170,
+         4185,   120, 12178,   117,  1105,  1543,  1122,  1315, 21093,  1156,
+          188,  5674,  2723,  1103,  2629,   119,   133,  9304,   120,   135,
+          133,  9304,   120,   135,  1142,  2523,  1110,  8362,  9261,  3452,
+        15809, 14816,   118,   118,   107, 25766,   107,  1107,  1167,  1190,
+         1141,  2305,   132,  1141,  1309,  5302,  1103,  3336, 18978,   119,
+        14816,   117,  1133, 27529,   117,  1105, 18523,   119,   102,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0])
+torch.Size([25000, 256])
+tensor([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+1563
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/root/miniconda3/envs/Pytorch-gpu/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+Epoch 0 Batch 100 Loss 0.3003
+Epoch 0 Batch 200 Loss 0.3135
+Epoch 0 Batch 300 Loss 0.3426
+Epoch 0 Batch 400 Loss 0.4092
+Epoch 0 Batch 500 Loss 0.3357
+Epoch 0 Batch 600 Loss 0.1626
+Epoch 0 Batch 700 Loss 0.1058
+Epoch 0 Batch 800 Loss 0.3217
+Epoch 0 Batch 900 Loss 0.3236
+Epoch 0 Batch 1000 Loss 0.0756
+Epoch 0 Batch 1100 Loss 0.5745
+Epoch 0 Batch 1200 Loss 0.2303
+Epoch 0 Batch 1300 Loss 0.1008
+Epoch 0 Batch 1400 Loss 0.1531
+Epoch 0 Batch 1500 Loss 0.2480
+Total loss 457.9719
+Epoch 1 Batch 100 Loss 0.4835
+Epoch 1 Batch 200 Loss 0.3571
+Epoch 1 Batch 300 Loss 0.3279
+Epoch 1 Batch 400 Loss 0.0821
+Epoch 1 Batch 500 Loss 0.2244
+Epoch 1 Batch 600 Loss 0.1316
+Epoch 1 Batch 700 Loss 0.0221
+Epoch 1 Batch 800 Loss 0.0094
+Epoch 1 Batch 900 Loss 0.0999
+Epoch 1 Batch 1000 Loss 0.1654
+Epoch 1 Batch 1100 Loss 0.0295
+Epoch 1 Batch 1200 Loss 0.0725
+Epoch 1 Batch 1300 Loss 0.0206
+Epoch 1 Batch 1400 Loss 0.2065
+Epoch 1 Batch 1500 Loss 0.0061
+Total loss 702.1054
+Accuracy:0.9156269993602048
